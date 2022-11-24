@@ -1,0 +1,973 @@
+2022-11-22 16:00:36,731 [1] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	Exception: Invalid URI: The hostname could not be parsed.
+   at System.Uri.CreateThis(String uri, Boolean dontEscape, UriKind uriKind)
+   at System.Uri..ctor(String uriString)
+   at System.Net.WebRequest.Create(String requestUriString)
+   at RequestEnvoyCounters.InfluxDb.Insert(String host, Int32 port, String dbName, String dbStmt) in C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\InfluxDb.cs:line 132
+2022-11-22 16:03:27,716 [1] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	Exception: {"error":"partial write: unable to parse 'meterChannel,u_eid=704643328,eid=704643328 actEnergyDlvd=4014.439 actEnergyRcvd=0.827 apparentEnergy=5910.394,reactEnergyLagg=2392.31,reactEnergyLead=7.05,instantaneousDemand=32.079,activePower=32.079,apparentPower=63.979,reactivePower=33.485,pwrFactor=0.455,voltage=240.604,current=0.266,freq=50.125 1669132996000000000': bad timestamp\nunable to parse 'meterChannel,u_eid=704643328,eid=704643328 actEnergyDlvd=1606.866 actEnergyRcvd=23.109 apparentEnergy=3893.658,reactEnergyLagg=1374.602,reactEnergyLead=7.446,instantaneousDemand=33.876,activePower=33.876,apparentPower=99.801,reactivePower=31.756,pwrFactor=0.333,voltage=237.986,current=0.421,freq=50.125 1669132996000000000': bad timestamp\nunable to parse 'meterChannel,u_eid=704643328,eid=704643328 actEnergyDlvd=1490.039 actEnergyRcvd=51.925 apparentEnergy=1786.746,reactEnergyLagg=1415.439,reactEnergyLead=6.813,instantaneousDemand=31.683,activePower=31.683,apparentPower=39.346,reactivePower=35.465,pwrFactor=0.857,voltage=244.845,current=0.16,freq=50.125 1669132996000000000': bad timestamp\nunable to parse 'meterChannel,u_eid=704643584,eid=704643584 actEnergyDlvd=4105.911 actEnergyRcvd=1629.633 apparentEnergy=12793.706,reactEnergyLagg=2929.861,reactEnergyLead=3811.192,instantaneousDemand=13.153,activePower=13.153,apparentPower=120.759,reactivePower=-53.856,pwrFactor=0.091,voltage=240.578,current=0.5,freq=50.125 1669132996000000000': bad timestamp\nunable to parse 'meterChannel,u_eid=704643584,eid=704643584 actEnergyDlvd=8463.681 actEnergyRcvd=282.043 apparentEnergy=12295.217,reactEnergyLagg=33.792,reactEnergyLead=3282.619,instantaneousDemand=178.016,activePower=178.016,apparentPower=222.895,reactivePower=-5.308,pwrFactor=0.795,voltage=237.943,current=0.925,freq=50.125 1669132996000000000': bad timestamp\nunable to parse 'meterChannel,u_eid=704643584,eid=704643584 actEnergyDlvd=23864.287 actEnergyRcvd=584.798 apparentEnergy=29517.349,reactEnergyLagg=60.319,reactEnergyLead=10101.047,instantaneousDemand=321.433,activePower=321.433,apparentPower=398.727,reactivePower=-217.933,pwrFactor=0.808,voltage=244.526,current=1.628,freq=50.125 1669132996000000000': bad timestamp dropped=0"}
+
+2022-11-22 16:23:24,092 [1] ERROR InfluxDb.Log[45] - Config	Exception: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at RequestEnvoyCounters.Config.Get(String name) in C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\Config.cs:line 36
+2022-11-22 16:23:25,372 [1] ERROR InfluxDb.Log[45] - Config	Exception: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at RequestEnvoyCounters.Config.Get(String name) in C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\Config.cs:line 36
+2022-11-22 16:24:15,236 [1] ERROR InfluxDb.Log[45] - Config	Exception: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at System.Dynamic.UpdateDelegates.UpdateAndExecute2[T0,T1,TRet](CallSite site, T0 arg0, T1 arg1)
+   at RequestEnvoyCounters.Config.Get(String name) in C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\Config.cs:line 36
+2022-11-22 16:24:16,569 [1] ERROR InfluxDb.Log[45] - Config	Exception: Cannot perform runtime binding on a null reference
+   at CallSite.Target(Closure , CallSite , Object , String )
+   at RequestEnvoyCounters.Config.Get(String name) in C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\Config.cs:line 36
+2022-11-22 16:43:58,802 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:58,802 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,022 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,094 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,115 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,156 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,203 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,300 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,300 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,341 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,371 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,422 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,474 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,541 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,624 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,638 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,680 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,717 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,785 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,874 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:43:59,925 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,019 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,112 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,209 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,270 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,270 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,363 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,363 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,485 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,485 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,549 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,570 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,631 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,664 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,721 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,736 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,773 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,817 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,888 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:00,952 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,064 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,080 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,138 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,179 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,249 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,268 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,303 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,341 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,414 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,434 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,538 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:01,635 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:02,660 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:02,660 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:03,783 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:03,783 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,064 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,235 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,504 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,504 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,624 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,644 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,691 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,879 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:04,947 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,303 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,367 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,393 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,469 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,469 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,519 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,593 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,593 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,632 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,669 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,726 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,770 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,787 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,825 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,864 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,915 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,952 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:05,990 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,045 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,100 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,213 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,213 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,278 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,482 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,482 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,515 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,548 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,582 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,642 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,683 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,718 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,762 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,807 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,898 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,966 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:06,983 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,033 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,191 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,191 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,446 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,663 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,740 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,760 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,848 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,882 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,920 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,981 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:07,998 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,141 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,141 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,181 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,224 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,309 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,329 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,375 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,463 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,641 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:44:08,641 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Invalid URI: The format of the URI could not be determined.
+2022-11-22 16:49:25,038 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 16:49:25,101 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:02:10,878 [5] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:02:10,905 [6] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:02:25,293 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:02:25,335 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:02:25,408 [6] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:02:25,442 [5] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:02:26,782 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:02:26,782 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:02:26,968 [5] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:02:26,992 [6] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:02:28,316 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:02:28,316 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:02:28,462 [5] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:02:28,462 [6] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:03:52,005 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:03:51,974 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:03:52,555 [5] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:03:52,555 [6] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:03:52,613 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Number must be either non-negative and less than or equal to Int32.MaxValue or -1. (Parameter 'millisecondsTimeout')
+2022-11-22 17:03:52,613 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Number must be either non-negative and less than or equal to Int32.MaxValue or -1. (Parameter 'millisecondsTimeout')
+2022-11-22 17:05:21,539 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:05:21,564 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:05:21,874 [5] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:05:21,927 [6] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:05:21,941 [5] ERROR InfluxDb.Log[45] - LoopMeeters	Number must be either non-negative and less than or equal to Int32.MaxValue or -1. (Parameter 'millisecondsTimeout')
+2022-11-22 17:05:21,970 [6] ERROR InfluxDb.Log[45] - LoopMeeters	Number must be either non-negative and less than or equal to Int32.MaxValue or -1. (Parameter 'millisecondsTimeout')
+2022-11-22 17:06:46,737 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:06:46,761 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:06:47,144 [6] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:06:47,144 [7] ERROR InfluxDb.Log[45] - Lib.influxDb.Insert()	
+2022-11-22 17:08:58,514 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:08:58,576 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:09:11,088 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:09:11,088 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:10:11,151 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:10:11,205 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:11:00,264 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:11:00,290 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:11:10,808 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:11:10,817 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:12:31,281 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:12:31,345 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:12:41,968 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:12:41,969 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:12:56,991 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:12:56,991 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:13:11,831 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:13:11,906 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:13:26,923 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:13:26,962 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:13:41,972 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:13:41,972 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:13:56,996 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:13:57,029 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:14:11,827 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:14:11,827 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:14:27,850 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:14:27,912 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:14:41,967 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:14:41,967 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:14:57,003 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:14:57,003 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:15:11,845 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:15:11,845 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:15:26,998 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:15:26,999 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:15:42,019 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:15:42,801 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:15:57,077 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:15:57,123 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:16:57,615 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:16:57,660 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:17:08,751 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:17:08,752 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:17:23,986 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:17:23,986 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:17:38,915 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:17:38,915 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:17:53,817 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:17:53,817 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:18:08,921 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:18:08,921 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:18:23,926 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:18:23,970 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:18:39,007 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:18:39,007 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:18:53,812 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:18:53,862 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:19:08,824 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:19:08,825 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:19:24,467 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:19:24,509 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:19:39,008 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:19:39,309 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:19:53,825 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:19:54,033 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:20:09,035 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:20:09,111 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:20:23,940 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:20:24,083 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:20:38,993 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:20:39,099 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:20:53,849 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:20:54,105 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:21:09,130 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:21:09,170 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:21:24,047 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:21:24,201 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:21:39,005 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:21:39,237 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:21:53,828 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:21:54,259 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:22:09,014 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:22:09,292 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:22:24,078 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:22:24,257 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:22:39,139 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:22:39,282 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:22:53,917 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:22:54,296 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:23:09,113 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:23:09,329 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:23:24,089 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:23:24,291 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:23:38,907 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:23:39,409 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:23:54,380 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:23:55,038 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:24:08,976 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:24:09,407 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:24:24,042 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:24:24,391 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:24:39,265 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:24:39,527 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:24:54,189 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:24:54,401 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:25:09,153 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:25:09,427 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:25:23,450 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:25:23,501 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:25:32,858 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:25:32,859 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:25:47,867 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:25:47,867 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:26:02,913 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:26:03,029 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:26:17,649 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:26:17,649 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:26:32,795 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:26:32,843 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:26:47,842 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:26:47,843 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:27:02,808 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:27:03,132 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:27:17,672 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:27:17,694 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:27:32,947 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:27:33,001 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:27:47,724 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:27:47,725 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:28:03,137 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:28:03,312 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:28:17,662 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:28:17,960 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:28:32,766 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:28:32,929 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:28:48,004 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:28:48,004 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:29:02,983 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:29:02,983 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:29:17,718 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:29:17,935 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:29:32,914 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:29:32,954 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:29:47,988 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:29:48,018 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:31:29,605 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:31:29,605 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:32:09,957 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:32:09,957 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:32:24,897 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:32:24,968 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:32:40,090 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:32:40,417 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:32:54,979 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:32:54,981 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:33:10,220 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:33:10,285 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:33:25,224 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:33:25,317 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:33:40,137 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:33:40,138 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:33:55,206 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:33:55,206 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:34:10,014 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:34:10,014 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:34:25,167 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:34:25,219 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:34:40,221 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:34:40,221 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:34:55,065 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:34:56,113 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:35:10,220 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:35:10,769 [6] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:35:25,191 [7] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:36:55,915 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:36:55,950 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:37:07,895 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:37:07,975 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:37:22,979 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:37:22,979 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:37:37,869 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:37:37,929 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:37:52,716 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:37:52,716 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:38:07,761 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:38:07,795 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:38:22,759 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:38:22,759 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:38:37,825 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:38:37,825 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:38:52,813 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:38:52,814 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:39:07,985 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:39:08,103 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:39:23,077 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:39:23,078 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:39:37,986 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:39:37,987 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:39:52,932 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:39:52,932 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:40:08,017 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:40:08,017 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:40:23,049 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:40:23,050 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:40:37,992 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:40:37,992 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:40:53,077 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:40:53,078 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:41:08,131 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:41:08,238 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:41:23,824 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:41:24,188 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:41:37,978 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:41:37,996 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:41:53,087 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:41:53,117 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:42:08,300 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:42:08,395 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:42:23,815 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:42:23,839 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:42:38,828 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:42:38,853 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:42:53,833 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:42:53,833 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:43:08,860 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:43:08,861 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:43:23,931 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:43:23,932 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:43:38,849 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:43:39,097 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:43:53,035 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:43:53,036 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:44:07,957 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:44:08,009 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:44:22,963 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:44:23,012 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:44:38,107 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:44:38,108 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:44:55,449 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:44:56,049 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:45:10,187 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:45:10,308 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:45:23,906 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:45:23,907 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:45:38,857 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:45:38,857 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:45:53,903 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:45:53,904 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:46:08,177 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:46:08,490 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:46:23,924 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:46:23,924 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:46:38,241 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:46:38,242 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:46:53,293 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:46:53,294 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:47:08,976 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:47:08,976 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:47:23,919 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:47:23,920 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:47:38,983 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:47:38,983 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:47:53,945 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:47:53,945 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:48:08,775 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:48:08,776 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:48:24,936 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:48:24,990 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:48:38,179 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:48:38,279 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:48:53,193 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:48:53,307 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:49:09,028 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:49:09,072 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:49:23,231 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:49:23,332 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:49:40,953 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:49:40,954 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:49:54,708 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:49:54,708 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:50:08,696 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:50:08,696 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:50:23,248 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:50:23,348 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:50:38,303 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:50:38,364 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:50:56,048 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:50:56,173 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:51:12,379 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:51:12,411 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:51:23,297 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:51:23,698 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:51:38,416 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:51:38,416 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:51:53,302 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:51:53,416 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:52:08,416 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:52:08,696 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:52:23,925 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:52:23,962 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:52:38,728 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:52:38,728 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:52:54,042 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:52:54,084 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:53:09,306 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:53:09,325 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:53:24,357 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:53:24,357 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:53:38,390 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:53:38,516 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:53:53,869 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:53:53,889 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:54:08,848 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:54:08,848 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:54:23,879 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:54:23,879 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:54:38,465 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:54:39,557 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:54:54,867 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:55:12,329 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:55:17,594 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:55:17,594 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:55:36,641 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:55:36,683 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:55:50,680 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:55:50,771 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:56:04,953 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:56:05,001 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:56:19,776 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:56:19,776 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:56:32,790 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:56:32,845 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:56:47,813 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:56:47,982 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:57:02,638 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:57:02,662 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:57:17,635 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:57:17,737 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:57:33,175 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:57:33,175 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:57:47,831 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:57:48,107 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:58:02,813 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:58:02,966 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:58:18,189 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:58:18,190 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:58:33,010 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:58:33,106 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:58:48,000 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:58:48,000 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:59:02,903 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:59:02,904 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:59:18,019 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:59:18,019 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:59:32,921 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:59:32,998 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 17:59:48,119 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 17:59:48,119 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:00:02,793 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:00:02,793 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:00:18,276 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:00:18,414 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:00:32,856 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:00:32,918 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:00:48,121 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:00:48,352 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:01:02,935 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:01:02,955 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:01:18,177 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:01:18,224 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:01:32,934 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:01:32,934 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:01:48,169 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:01:48,263 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:02:03,135 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:02:03,135 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:02:17,919 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:02:18,976 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:02:33,257 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:02:33,257 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:02:48,310 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:02:49,407 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:03:03,313 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:03:03,408 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:03:18,288 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:03:19,039 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:03:33,031 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:03:33,031 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:03:48,222 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:03:49,066 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:04:02,991 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:04:03,137 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:04:18,014 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:04:18,434 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:04:33,060 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:04:33,060 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:04:48,212 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:04:48,213 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:05:03,019 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:05:03,324 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:05:18,077 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:05:18,095 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:05:33,282 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:05:33,426 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:05:48,082 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:05:48,477 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:06:03,759 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:06:04,038 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:06:18,497 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:06:18,497 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:06:33,558 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:06:33,558 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:06:48,467 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:06:48,593 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:07:03,526 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:07:03,685 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:07:18,806 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:07:18,915 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:07:33,705 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:07:33,801 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:07:48,844 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:07:48,910 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:08:03,608 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:08:03,699 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:08:18,583 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:08:18,617 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:08:33,782 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:08:34,029 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:08:48,560 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:08:48,641 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:09:03,641 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:09:03,641 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:09:18,922 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:09:18,922 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:09:33,578 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:09:33,579 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:09:48,669 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:09:48,669 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:10:03,851 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:10:04,672 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:10:18,777 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:10:18,777 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:10:33,534 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:10:33,698 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:10:48,818 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:10:49,649 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:11:03,766 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:11:03,901 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:11:19,057 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:11:19,062 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:11:34,020 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:11:34,134 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:11:48,879 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:11:48,994 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:12:03,594 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:12:03,659 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:12:18,711 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:12:18,799 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:12:34,146 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:12:34,201 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:12:48,726 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:12:48,752 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:13:03,957 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:13:04,034 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:13:19,039 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:13:19,159 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:13:33,956 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:13:34,042 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:13:48,954 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:13:49,137 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:14:03,818 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:14:05,080 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:14:18,889 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:14:18,889 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:14:34,023 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:14:34,046 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:14:48,768 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:14:48,815 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:15:03,940 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:15:04,933 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:15:18,898 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:15:20,026 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:15:33,959 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:15:34,070 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:15:48,961 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:15:49,121 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:16:04,291 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:16:05,281 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:16:19,414 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:16:19,787 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:16:34,014 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:16:34,014 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:16:50,326 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:16:50,425 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:17:04,154 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:17:04,849 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:17:18,915 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:17:18,952 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:17:34,037 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:17:34,075 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:17:49,244 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:17:49,408 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:18:04,222 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:18:04,222 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:18:20,383 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:18:20,383 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:18:34,110 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:18:34,791 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:18:49,149 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:18:49,946 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:19:04,131 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:19:04,732 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:19:19,021 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:19:21,564 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:19:34,074 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:19:34,915 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:19:49,221 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:19:50,014 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:20:04,254 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:20:05,094 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:20:19,202 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:20:19,883 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:20:34,229 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:20:35,071 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:20:49,017 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:20:49,882 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:21:04,371 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:21:05,367 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:21:19,790 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:21:19,874 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:21:34,153 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:21:34,886 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:21:49,390 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:21:50,209 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:22:04,286 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:22:05,163 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:22:19,097 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:22:19,981 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:22:34,040 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:22:35,070 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:22:49,112 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:22:50,376 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:23:04,397 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:23:05,328 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:23:19,415 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:23:19,947 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:23:34,212 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:23:35,046 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:23:49,228 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:23:50,023 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:24:04,260 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:24:05,009 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:24:19,508 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:24:20,341 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:24:34,601 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:24:34,962 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:24:49,230 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:24:50,314 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:25:04,261 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:25:05,474 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:25:19,488 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:25:20,005 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:25:34,776 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:25:34,961 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:25:49,551 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:25:50,274 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:26:05,081 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:26:05,100 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:26:20,017 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:26:20,122 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:26:35,089 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:26:35,089 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:26:50,113 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:26:50,142 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:27:04,331 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:27:05,136 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:27:19,629 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:27:20,232 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:27:34,280 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:27:35,166 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:27:49,640 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:27:50,483 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:28:04,233 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:28:05,535 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:28:19,458 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:28:20,335 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:28:34,580 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:28:35,358 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:28:49,646 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:28:50,494 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:29:04,440 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:29:06,605 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:29:19,643 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:29:20,617 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:29:34,633 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:29:35,333 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:29:49,659 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:29:51,694 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:30:04,442 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:30:05,869 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:30:19,598 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:30:20,178 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:30:34,534 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:30:35,347 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:30:49,481 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:30:50,343 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:31:05,424 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:31:06,256 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:31:19,923 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:31:20,192 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:31:34,448 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:31:35,249 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:31:49,642 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:31:50,628 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:32:04,403 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:32:05,239 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:32:19,583 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:32:20,266 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:32:34,632 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:32:35,469 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:32:49,591 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:32:50,434 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:33:04,804 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:33:05,542 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:33:19,469 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:33:20,315 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:33:34,591 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:33:35,431 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:33:49,493 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:33:50,331 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:34:04,574 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:34:05,429 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:34:19,669 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:34:20,459 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:34:34,569 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:34:35,454 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:34:49,665 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:34:50,440 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:35:04,996 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:35:05,742 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:35:19,639 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:35:20,612 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:35:35,151 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:35:35,441 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:35:49,615 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:35:50,437 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:36:04,678 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:36:05,815 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:36:19,886 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:36:20,428 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:36:34,888 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:36:35,760 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:36:49,859 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:36:50,667 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:37:05,072 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:37:05,916 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:37:19,815 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:37:20,943 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:37:35,788 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:37:35,789 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:37:49,757 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:37:51,013 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:38:05,305 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:38:05,475 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:38:19,858 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:38:20,882 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:38:35,111 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:38:35,474 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:38:50,631 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:38:50,652 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:39:05,004 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:39:05,845 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:39:19,852 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:39:20,638 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:39:35,209 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:39:36,045 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:39:50,141 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:39:51,007 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:40:05,034 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:40:05,855 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:40:19,934 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:40:20,734 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:40:34,906 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:40:35,742 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:40:49,918 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:40:50,752 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:41:05,437 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:41:06,068 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:41:20,654 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:41:20,673 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:41:35,240 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:41:35,645 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:41:50,079 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:41:50,901 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:42:05,287 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:42:05,813 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:42:20,385 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:42:20,760 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:42:35,045 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:42:35,902 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:42:50,047 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:42:50,886 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:43:05,122 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:43:05,861 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:43:19,991 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:43:20,682 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:43:35,028 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:43:35,824 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:43:50,291 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:43:51,135 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:44:05,202 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:44:05,823 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:44:20,180 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:44:20,811 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:44:35,028 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:44:35,851 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:44:49,966 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:44:50,796 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:45:05,194 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:45:05,784 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:45:20,174 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:45:20,815 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:45:35,967 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:45:38,339 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:45:50,274 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:45:50,755 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:46:05,722 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:46:06,110 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:46:20,333 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:46:21,066 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:46:35,898 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:46:35,914 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:46:50,542 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:46:50,873 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:47:05,800 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:47:05,873 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:47:20,283 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:47:21,069 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:47:35,136 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:47:36,294 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:47:50,604 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:47:50,926 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:48:05,671 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:48:05,983 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:48:20,535 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:48:21,552 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:48:35,533 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:48:36,402 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:48:50,169 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:48:51,018 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:49:05,473 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:49:06,052 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:49:20,248 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:49:21,052 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:49:35,555 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:49:36,396 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:49:50,621 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:49:51,135 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:50:05,281 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:50:06,074 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:50:20,423 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:50:21,051 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:50:35,516 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:50:36,325 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:50:50,626 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:50:51,339 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:51:05,976 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:51:06,463 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:51:20,485 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:51:21,319 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:51:35,643 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:51:36,504 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:51:50,689 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:51:51,542 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:52:05,553 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:52:06,357 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:52:20,453 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:52:21,699 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:52:35,377 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:52:36,210 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:52:50,685 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:52:51,133 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:53:05,822 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:53:06,118 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:53:20,404 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:53:21,123 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:53:35,783 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:53:36,132 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:53:50,512 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:53:51,131 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:54:05,385 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:54:06,198 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:54:20,547 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:54:21,350 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.
+2022-11-22 18:54:35,477 [5] INFO InfluxDb.Log[42] - ReadInverters	Received 6 metrics.
+2022-11-22 18:54:36,214 [6] INFO InfluxDb.Log[42] - ReadMeters	Received 2 metrics.

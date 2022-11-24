@@ -1,0 +1,5 @@
+c:\temp\envoy\RequestEnvoyCounters.exe
+c:\temp\envoy\RequestEnvoyCounters.dll
+c:\temp\envoy\RequestEnvoyCounters.deps.json
+c:\temp\envoy\RequestEnvoyCounters.runtimeconfig.json
+c:\temp\envoy\RequestEnvoyCounters.pdb

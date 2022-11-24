@@ -1,0 +1,6 @@
+﻿
+
+
+dotnet build
+dotnet run
+

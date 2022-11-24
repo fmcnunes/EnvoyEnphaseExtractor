@@ -1,0 +1,14 @@
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\bin\Release\netcoreapp3.1\RequestEnvoyCounters.exe
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\bin\Release\netcoreapp3.1\RequestEnvoyCounters.deps.json
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\bin\Release\netcoreapp3.1\RequestEnvoyCounters.runtimeconfig.json
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\bin\Release\netcoreapp3.1\RequestEnvoyCounters.runtimeconfig.dev.json
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\bin\Release\netcoreapp3.1\RequestEnvoyCounters.dll
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\bin\Release\netcoreapp3.1\RequestEnvoyCounters.pdb
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\obj\Release\netcoreapp3.1\RequestEnvoyCounters.csproj.AssemblyReference.cache
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\obj\Release\netcoreapp3.1\RequestEnvoyCounters.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\obj\Release\netcoreapp3.1\RequestEnvoyCounters.AssemblyInfoInputs.cache
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\obj\Release\netcoreapp3.1\RequestEnvoyCounters.AssemblyInfo.cs
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\obj\Release\netcoreapp3.1\RequestEnvoyCounters.csproj.CoreCompileInputs.cache
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\obj\Release\netcoreapp3.1\RequestEnvoyCounters.dll
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\obj\Release\netcoreapp3.1\RequestEnvoyCounters.pdb
+C:\Users\x952429\source\repos\WebMonProjects\Envoy\RequestEnvoyCounters\RequestEnvoyCounters\obj\Release\netcoreapp3.1\RequestEnvoyCounters.genruntimeconfig.cache
