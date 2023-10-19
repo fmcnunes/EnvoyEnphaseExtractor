@@ -133,14 +133,8 @@ namespace RequestEnvoyCounters
             Uri uri = new Uri(url);
             WebRequest request = WebRequest.Create(uri);
 
-            var credentialCache = new CredentialCache();
-            credentialCache.Add(
-              new Uri(uri.GetLeftPart(UriPartial.Authority)), // request url's host
-              "Digest",  // authentication type 
-              new NetworkCredential(username, password) // credentials 
-            );
-
-            request.Credentials = credentialCache;
+            request.Headers.Add("Authorization", $"Bearer {token}");
+            log.Log(Logger.Level.Info, "ReadMeters", $"Bearer {token}");
 
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
 
