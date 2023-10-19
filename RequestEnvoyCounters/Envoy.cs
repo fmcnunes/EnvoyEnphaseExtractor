@@ -19,16 +19,15 @@ namespace RequestEnvoyCounters
         Logger log = new Logger("Envoy");
 
         private static String url = "";
-        private static String username = "";
-        private static String password = "";
 
         public Envoy()
         {
             Config config = new Config();
 
             url =      config.GetString("Envoy", "url");
-            username = config.GetString("Envoy", "username");
-            password = config.GetString("Envoy", "password");
+			
+			ServicePointManager.ServerCertificateValidationCallback = delegate { return true; };
+
         }
 
         public void Run()
