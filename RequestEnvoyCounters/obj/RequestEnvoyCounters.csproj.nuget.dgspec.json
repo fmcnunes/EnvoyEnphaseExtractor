@@ -1,37 +1,37 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\x952429\\source\\repos\\WebMonProjects\\Envoy\\RequestEnvoyCounters\\RequestEnvoyCounters\\RequestEnvoyCounters.csproj": {}
+    "C:\\Users\\fmcnu\\OneDrive\\Desktop\\EnvoyEnphaseExtractor\\RequestEnvoyCounters\\RequestEnvoyCounters.csproj": {}
   },
   "projects": {
-    "C:\\Users\\x952429\\source\\repos\\WebMonProjects\\Envoy\\RequestEnvoyCounters\\RequestEnvoyCounters\\RequestEnvoyCounters.csproj": {
+    "C:\\Users\\fmcnu\\OneDrive\\Desktop\\EnvoyEnphaseExtractor\\RequestEnvoyCounters\\RequestEnvoyCounters.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\x952429\\source\\repos\\WebMonProjects\\Envoy\\RequestEnvoyCounters\\RequestEnvoyCounters\\RequestEnvoyCounters.csproj",
+        "projectUniqueName": "C:\\Users\\fmcnu\\OneDrive\\Desktop\\EnvoyEnphaseExtractor\\RequestEnvoyCounters\\RequestEnvoyCounters.csproj",
         "projectName": "RequestEnvoyCounters",
-        "projectPath": "C:\\Users\\x952429\\source\\repos\\WebMonProjects\\Envoy\\RequestEnvoyCounters\\RequestEnvoyCounters\\RequestEnvoyCounters.csproj",
-        "packagesPath": "C:\\Users\\x952429\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\x952429\\source\\repos\\WebMonProjects\\Envoy\\RequestEnvoyCounters\\RequestEnvoyCounters\\obj\\",
+        "projectPath": "C:\\Users\\fmcnu\\OneDrive\\Desktop\\EnvoyEnphaseExtractor\\RequestEnvoyCounters\\RequestEnvoyCounters.csproj",
+        "packagesPath": "C:\\Users\\fmcnu\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\fmcnu\\OneDrive\\Desktop\\EnvoyEnphaseExtractor\\RequestEnvoyCounters\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
-          "C:\\Microsoft\\Xamarin\\NuGet\\",
-          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\x952429\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
+          "C:\\Users\\fmcnu\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
-          "netcoreapp3.1"
+          "net8.0"
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
-          "netcoreapp3.1": {
-            "targetAlias": "netcoreapp3.1",
+          "net8.0": {
+            "targetAlias": "net8.0",
             "projectReferences": {}
           }
         },
@@ -39,11 +39,16 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
-        "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
+        "net8.0": {
+          "targetAlias": "net8.0",
           "dependencies": {
             "Microsoft.AspNetCore.Hosting.Abstractions": {
               "target": "Package",
@@ -81,18 +86,12 @@
           ],
           "assetTargetFallback": true,
           "warn": true,
-          "downloadDependencies": [
-            {
-              "name": "Microsoft.NETCore.App.Host.win-x64",
-              "version": "[3.1.30, 3.1.30]"
-            }
-          ],
           "frameworkReferences": {
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.402\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.300/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

@@ -11,10 +11,10 @@
 using System;
 using System.Reflection;
 
-[assembly: System.Reflection.AssemblyCompanyAttribute("BCP")]
+[assembly: System.Reflection.AssemblyCompanyAttribute("RequestEnvoyCounters")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+fed49018ff40f031f626cc79770f34273639164e")]
 [assembly: System.Reflection.AssemblyProductAttribute("RequestEnvoyCounters")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RequestEnvoyCounters")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

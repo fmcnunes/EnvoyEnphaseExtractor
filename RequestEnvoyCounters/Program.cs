@@ -22,7 +22,7 @@ namespace RequestEnvoyCounters
         {
             Envoy envoy = new Envoy();
 
-            envoy.Run();
+            envoy.Test();
         }
     }
 }
